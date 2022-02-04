@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_test/controllers/bindings/auth_binding.dart';
 import 'package:firebase_test/controllers/theme_controller.dart';
+import 'package:firebase_test/views/pages/google_login.dart';
 import 'package:firebase_test/views/pages/root_page.dart';
 import 'package:firebase_test/views/widgets/themes.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
       theme: Themes.lightTheme,
       darkTheme: Themes.darkTheme,
       title: 'Flutter Firebase Test',
-      home: const RootPage(),
+      //home: const RootPage(),
+      home: GoogleLogin(),
     );
   }
 }
