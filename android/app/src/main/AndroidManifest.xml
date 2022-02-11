@@ -2,9 +2,10 @@
     package="com.example.firebase_test">
     <!--  -->
     <!-- <application android:usesCleartextTraffic="true"> -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <!--  -->
    <application
-        android:label="firebase_test"
+        android:label="ABC"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -25,6 +26,10 @@
               />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="FLUTTER_NOTIFICATION_CLICK"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
